@@ -4,18 +4,26 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
+	
 	<title>Lorem Way</title>
+	
+	<!-- Libs -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="css/icon-pack.css">
+	
+    <!-- CSS -->
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
-
+	
+    <!-- Media CSS should be under everything -->
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
 	<header>
-		<div class="container">
+		<div class="container top-line">
 			<div class="logo">
 				<img src="img/logo.png" alt="logo.png didn't found">
 			</div>
@@ -30,6 +38,13 @@
 					<li><a href="#contact_us">Contact us</a></li>
 				</ul>
 			</nav>
+			<div class="menu-btn-wrap">
+			    <div class="menu-btn">
+			        <div class="btn-line"></div>
+			        <div class="btn-line"></div>
+			        <div class="btn-line"></div>
+			    </div>
+			</div>
 		</div>
 	</header>
 
@@ -47,6 +62,7 @@
 				<input type="tel" placeholder="Phone Number" name="tel" id="phone" required>
 				<button type="submit">Request a quote</button>
 			</form>
+			<button class="btn-form">Connect with</button>
 			<div class="slider_wrap">
 				<div class="slider">
 					<div class="slide">
@@ -68,7 +84,7 @@
 		<h4>Lorem Ipsum is simply dummy Business industry.</h4>
 		<div class="blocks_container">
 			<div class="block">
-				<i class="icon-clock"></i>
+				<i class="icon icon-clock"></i>
 				<div>
 					<h3>Font-Awesome Icons</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
@@ -77,7 +93,7 @@
 				</div>
 			</div>
 			<div class="block">
-				<i class="icon-gear"></i>
+				<i class="icon icon-gear"></i>
 				<div>
 					<h3>Fully Responsive Design</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
@@ -86,7 +102,7 @@
 				</div>
 			</div>
 			<div class="block">
-				<i class="icon-education"></i>
+				<i class="icon icon-education"></i>
 				<div>
 					<h3>Working Contact form</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
@@ -95,7 +111,7 @@
 				</div>
 			</div>
 			<div class="block">
-				<i class="icon-rocket"></i>
+				<i class="icon icon-rocket"></i>
 				<div>
 					<h3>Retina Ready icons here</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
@@ -104,7 +120,7 @@
 				</div>
 			</div>
 			<div class="block">
-				<i class="icon-logicicon"></i>
+				<i class="icon icon-logicicon"></i>
 				<div>
 					<h3>Friendly Code</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
@@ -113,7 +129,7 @@
 				</div>
 			</div>
 			<div class="block">
-				<i class="icon-dollar"></i>
+				<i class="icon icon-dollar"></i>
 				<div>
 					<h3>Flat trendy landing page Design</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
@@ -123,6 +139,7 @@
 			</div>
 		</div>
 	</section>
+	
 	<section id="about" class="about clearfix">
 		<div class="left-part" style="background-image: url(img/half-img.jpg)"></div>
 		<div class="right-part">
@@ -131,7 +148,7 @@
 				<button>Read More</button>
 		</div>
 	</section>
-	
+
 	<section id="pricing" class="pricing">
 		<div class="container">
 			<h2>Choose your price</h2>
@@ -176,6 +193,7 @@
 			</div>
 		</div>
 	</section>
+	
 	<section id="how_it_work" class="how_it_work container">
 		<h2>how it work</h2>
 		<p>Lorem Ipsum is simply dummy Business industry</p>
@@ -215,6 +233,7 @@
 		</div>
 		<button>get started now</button>
 	</section>
+	<!--
 	<section id="happy_clients" class="happy_clients-wrapper">
 		<div class="container happy_clients">
 			<h2>Happy Clients</h2>
@@ -304,6 +323,7 @@
 			</div>
 		</div>
 	</footer>
+	-->
 	<!--	scripts-->
 	<script src="js/jquery.min.js"></script>
 	<script src="libs/slick/slick.js"></script>

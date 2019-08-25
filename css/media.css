@@ -1,0 +1,264 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .container {
+        width: 960px;
+    }
+    header nav > ul li > a {
+        padding: 8px 10px;
+        text-transform: none;
+    }
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .container {
+        width: 700px;
+    }
+    
+    /*  Section 'home'  */
+    .home form {
+        display: none;
+    }
+    .home .btn-form {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    /*  section 'Service'  */
+    .blocks_container {
+        grid-gap: 50px 40px;
+    }
+    
+    .about .right-part {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .pricing {
+        padding-bottom: 100px;
+    }
+    .plans {
+        display: block;
+        text-align: center;
+    }
+    .plan {
+        display: inline-block;
+        padding: 30px 40px;
+        height: 370px;
+        margin: 10px;
+    }
+    .plan p {
+        margin: 10px 0;
+    }
+    .plan .price + span,
+    .plan.active .price + span {
+        margin-bottom: 15px;
+    }
+    .plan.active{
+        flex: 10;
+        height: 370px;
+        background-color: #709dca;
+        border: 1px solid #ccd5df;
+    }
+    .plan.active h3{
+        margin: 0;
+    }
+    .plan .price {
+        font-size: 50px;
+        margin-bottom: 2px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+    
+    .container {
+        width: 80%;
+    }
+    .menu-btn-wrap {
+        display: table;
+    }
+    .top-line {
+        position: relative;
+    }
+    
+    header nav {
+        visibility: hidden;
+        position: absolute;
+        line-height: 1;
+        opacity: 0;
+        right: 0;
+        top: 70px;
+        z-index: 5;
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    header nav ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #c7c7c7;
+    }
+    header nav ul li {
+        margin: 0;
+        padding: 0;
+        line-height: 25px;
+        width: 12em;
+        font-size: 16px;
+        text-align: left;
+        background-color: #fff;
+        border-bottom: 1px solid #ededed;
+    }
+    header nav ul li a {
+        display: block;
+        font-size: inherit;
+        padding-left: 15px;
+        border-radius: 0;
+    }
+    
+    header nav.show {
+        visibility: visible;
+        opacity: 1;
+        max-height: 296px;
+    }
+    
+    .home {
+        padding-bottom: 100px;
+    }
+    .home h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .home p {
+        font-size: 14px;
+    }    
+    .home .slider_wrap {
+        display: none;
+    }
+    
+    .service {
+        padding-top: 100px;
+    }
+    .service .block {
+        display: block;
+    }
+    .block .icon {
+        float: left;
+        margin: 0 15px 10px 0;
+    }
+    .icon-education:before {
+        padding-right: 10px;
+    }
+    .block h3 {
+        font-size: 14px;
+    }
+    
+    .about .right-part {
+        padding: 50px 30px;
+    }
+    .about .right-part p {
+        line-height: 18px;
+    }
+    
+    .pricing .container > p {
+        margin: 10px;
+        margin-bottom: 0;
+    }
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    
+    .service {
+        padding-bottom: 80px;
+    }
+    .service .blocks_container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px 0;
+    }
+    .service .block {
+        display: flex;
+        flex-direction: column;
+    }
+    .block h3 {
+        text-align: center;
+    }
+    .icon-education:before {
+        padding-right: 0;
+    }
+    .block .icon {
+        float: none;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    
+    .about .left-part {
+        display: none;
+    }
+    
+    .plan {
+        height: auto!important;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

@@ -12,18 +12,16 @@ $(document).ready(function(){
 	$(".dots li > button").html("");
 	
 	// Scroll script
-	
 	$('a[href^="#"]').bind("click", function(e){
 	  var anchor = $(this);
 	  $('html, body').stop().animate({
 	   scrollTop: $(anchor.attr("href")).offset().top
 	  }, 1000);
 	  e.preventDefault();
+	  return false;
 	 });
-	 return false;
 	
 	// Ajax form
-	
 	$("#quote").submit(function(){
 		$.ajax({
 			type: "POST",
@@ -34,4 +32,11 @@ $(document).ready(function(){
 		});
 		return false;
 	});
+    
+    // Menu Toggle Button
+    $( ".menu-btn" ).on( "click", function() {
+      this.classList.toggle("close");
+      $("header nav").toggleClass("show");
+//      $("header nav").slideToggle();
+    });
 });
