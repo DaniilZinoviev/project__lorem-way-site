@@ -10,6 +10,9 @@
         text-transform: none;
     }
     
+    .commentary blockquote {
+        width: 260px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -39,6 +42,7 @@
     
     .pricing {
         padding-bottom: 100px;
+        padding-top: 80px;
     }
     .plans {
         display: block;
@@ -69,6 +73,50 @@
     .plan .price {
         font-size: 50px;
         margin-bottom: 2px;
+    }
+    
+    .how_it_work {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+    .steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px 0;
+    }
+    .step:nth-child(even)::after {
+        display: none;
+    }
+    .step:nth-child(odd)::after {
+        right: -33%;
+    }
+    .step i {
+        margin-bottom: 20px;
+    }
+    
+    .commentary {
+        padding: 25px 20px 20px 20px;
+    }
+    .commentary img {
+        float: none;
+        margin-bottom: 15px;
+    }
+    
+    .happy_clients {
+        padding-bottom: 100px;
+        padding-top: 80px;
+    }
+    
+    #subscribe button,
+    #subscribe input {
+        margin-bottom: 20px;
+    }
+    
+    footer nav ul li a {
+        padding: 8px 10px;
+    }
+    footer .phone {
+        margin-top: 30px;
     }
 }
 
@@ -193,6 +241,70 @@
         margin-bottom: 0;
     }
     
+    .steps {
+        margin-top: 30px;
+        grid-gap: 10px 0;
+    }
+    .step p {
+        line-height: 20px;
+    }
+    .step::after {
+        display: none!important;
+    }
+    
+    .commentaries {
+        display: block;
+        min-height: 350px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    .commentaries .arrows {
+        display: block;
+    }
+    .arrow-left,
+    .arrow-right{
+        display: inline-block;
+        position: absolute;
+        background: url("../img/slider_arrows.png") no-repeat;
+        width: 16px;
+        height: 29px;
+        left: 0;
+        top: 40%;
+        cursor: pointer;
+    }
+    .arrow-right {
+        left: auto;
+        right: 0;
+        background-position: 100% 0;
+    }
+    .commentary {
+        position: absolute;
+        left: 50%;
+        opacity: 0;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 340px;
+    }
+    .commentary img {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .commentary blockquote {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .commentary.active {
+        opacity: 1;
+    }
+    
+    #subscribe > label {
+        display: none;
+    }
+    
+    footer nav {
+        display: none;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -228,6 +340,40 @@
     .plan {
         height: auto!important;
     }
+    
+    .steps {
+        grid-template-columns: 1fr;
+        grid-gap: 20px 0;
+    }
+    .step {
+        padding-top: 0;
+    }
+    .how_it_work button {
+        margin-top: 50px;
+    }
+    
+    .commentaries {
+        min-height: 450px;
+    }
+    .commentary {
+        width: 75%;
+    }
+    .commentary img {
+        width: 100px;
+    }
+    .commentary blockquote {
+        width: 90%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .contact_us {
+        padding-bottom: 140px;
+    }
+    .address {
+        width: 260px;
+        height: 260px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -249,8 +395,15 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 769px) {
+    .commentary {
+        transform: translateX(0)!important;
+    }
+}
 
+/* SPECIAL for 'commentaries slider' */
+@media only screen and (min-width : 769px) {
+    .commentary {}
 }
 
 /* Medium Devices, Desktops */

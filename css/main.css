@@ -519,15 +519,9 @@ ul.dots > li.slick-active > button{
 }
 .how_it_work button{
 	margin-top: 90px;
-	border: none;
-	background-color: #ffbb42;
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 14px;
 	font-family: "Lato Regular";
 	padding: 15px 25px;
 	border-radius: 3px;
-	cursor: pointer;
 }
 /* Section "happy clients" */
 .happy_clients-wrapper{
@@ -555,11 +549,18 @@ ul.dots > li.slick-active > button{
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 3% 3%;
 }
+.commentaries .arrows {
+    display: none;
+}
 .commentary{
 	background-color: #fff;
 	padding: 40px 20px 30px 20px;
+    -webkit-transition: all .4s ;
+	-o-transition: all .4s ;
+	transition: all .4s ;
 }
 .commentary img{
+    display: inline-block;
 	border-radius: 50%;
 	width: 120px;
 	float: left;
@@ -696,7 +697,9 @@ blockquote::before{
 /* FOOTER */
 footer{
 	text-align: center;
-	padding-top:60px;
+}
+footer hr {
+    margin-bottom: 60px;
 }
 footer nav ul {
 	justify-content: center;
@@ -722,12 +725,16 @@ footer .social a{
 footer .social a:hover{
 	color: #ffc155;
 }
-.copyright{
+.copyright {
 	background-color: #709dca;
 	text-align: center;
 	padding: 5px;
 }
 .copyright p{
+    word-break: keep-all;
 	font-family: "Open Sans Regular";
 	color: #fff;
+}
+.copyright p span {
+    display: inline-block;
 }
