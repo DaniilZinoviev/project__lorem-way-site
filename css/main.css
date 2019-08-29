@@ -49,7 +49,17 @@ button:hover{
 	-webkit-box-shadow: 3px 3px 10px -3px rgba(56, 56, 56, 0.4);
 	box-shadow: 3px 3px 10px -3px rgba(56, 56, 56, 1);
 }
+
+.hidden {
+    display: none;
+}
+
+.section-head p {
+    animation-delay: 0.2s;
+}
+
 /* Global input settings */
+
 input{
 	border: none;
 	border-radius: 3px;
@@ -97,6 +107,14 @@ input{
 }
 
 /* HEADER */
+header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
 header > .container{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -118,7 +136,7 @@ nav > ul{
 	display: flex;
 	align-items: center;
 }
-nav > ul li{
+nav > ul li {
 	margin: 0 2px;
 }
 nav > ul li > a{
@@ -141,7 +159,7 @@ header nav > ul li > a:hover{
 	background-color: #709dca;
 	color: #fff;
 	text-align: center;
-	padding-top: 110px;
+	padding-top: 180px;
 }
 .home h2{
 	margin: 0;
@@ -243,11 +261,11 @@ ul.dots > li.slick-active > button{
 	text-align: center;
     padding-bottom: 100px;
 }
-.service > h2{
+.service .section-head h2{
 	font-size: 30px;
 	margin: 0;
 }
-.service > h4{
+.service .section-head p{
 	font-size: 16px;
 	font-weight: normal;
 	margin: 5px;
@@ -331,12 +349,14 @@ ul.dots > li.slick-active > button{
 	text-align: center;
 	padding-top: 130px;
 }
-.pricing h2{
+.pricing .section-head h2{
 	color: #394b50;
 	font-size: 30px;
 	margin: 0;
+    margin-bottom: 10px;
 }
-.pricing .container > p{
+
+.pricing .section-head p{
 	font-family: "Lato Light";
 	font-size: 18px;
 	color: #75888d;
@@ -442,13 +462,14 @@ ul.dots > li.slick-active > button{
 	padding-top: 155px;
     padding-bottom: 130px;
 }
-.how_it_work h2{
+.how_it_work .section-head h2{
 	text-transform: uppercase;
 	font-size: 30px;
 	color: #394b50;
 	margin: 0;
+    margin-bottom: 10px;
 }
-.how_it_work > p{
+.how_it_work .section-head p{
 	color: #394b50;
 	margin: 0;
 	font-size: 18px;
@@ -532,13 +553,13 @@ ul.dots > li.slick-active > button{
     padding-bottom: 200px;
 	text-align: center;
 }
-.happy_clients h2{
+.happy_clients .section-head h2{
 	margin: 0;
 	color: #fff;
 	font-size: 30px;
 	text-transform: uppercase;
 }
-.happy_clients > p{
+.happy_clients .section-head p{
 	margin: 0;
 	color: #fff;
 	font-size: 16px;
@@ -737,4 +758,60 @@ footer .social a:hover{
 }
 .copyright p span {
     display: inline-block;
+}
+
+/* Callback form  */
+#callback-form {
+    width: 300px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px 15px;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+#callback-form input {
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+#callback-form h2 {
+    color: #333;
+    margin: 10px 0;
+    font-size: 22px;
+    margin-top: 0;
+    padding: 0 5px;
+}
+#callback-form p {
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#callback-form button[type=submit] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 3px;
+}
+
+#callback-form .mfp-close {
+    left: 50%;
+    top: 10px;
+    transform: translateX(105px)
+}
+#callback-form .mfp-close:hover {
+    box-shadow: none;
 }

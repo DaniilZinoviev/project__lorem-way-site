@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    
+    // Slick.js Slider on Home-section
 	$('.slider').slick({
 		autoplay : true,
 		arrows: false,
@@ -8,12 +10,14 @@ $(document).ready(function(){
 		dotsClass : 'dots',
 		appendDots: $(".dots")
 	});
-	
 	$(".dots li > button").html("");
-	
+    
 	// Scroll script
 	$('a[href^="#"]').bind("click", function(e){
 	  var anchor = $(this);
+      // if element should not scroll      
+      if ( $(anchor.attr("href")).parent().hasClass("hidden")  ) return false;
+        
 	  $('html, body').stop().animate({
 	   scrollTop: $(anchor.attr("href")).offset().top
 	  }, 1000);
@@ -38,6 +42,39 @@ $(document).ready(function(){
       this.classList.toggle("close");
       $("header nav").toggleClass("show");
     });
+    
+    // Animations
+    $(".section-head h2, .section-head p").animated("fadeInRight");
+    $(".blocks_container .block:nth-child(odd)").animated("fadeInLeft");
+    $(".blocks_container .block:nth-child(even)").animated("fadeInRight");
+    $("button").animated("fadeIn");
+    
+    $(".pricing").waypoint(function () {
+        $(".plan").each(function(index) {
+            setTimeout(() => {
+                this.classList.add("animated", "zoomIn")
+            }, index * 150);
+        })
+    }, {
+        offset: "20%"
+    });
+    
+    $(".how_it_work").waypoint(function() {
+        $(".step").each(function(index) {
+            setTimeout(() => {
+                this.classList.add("animated", "fadeInRight");
+            }, index * 150);
+        });
+    }, {
+        offset: "20%"
+    });
+    
+    // Pop-up Form
+    $('.pop-up--btn').magnificPopup({
+      type:'inline',
+      midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+    
     
     // Slider for "Happy Clients"-section
     let ind = 1;  // Index of current slide

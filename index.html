@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="css/icon-pack.css">
+    <link rel="stylesheet" href="libs/animate/animate.min.css">
+    <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/fonts.css">
@@ -50,8 +53,11 @@
 
     <section id="home" class="home">
         <div class="container">
-            <h2>Boost up your Local business</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>
+            <div class="section-head">
+                <h2>Boost up your Local business</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>
+            </div>
+
             <form class="quote" id="quote">
                 <!-- Icons is tied by name of input! -->
                 <label for="name"><i class="icon-user"></i></label>
@@ -62,7 +68,7 @@
                 <input type="tel" placeholder="Phone Number" name="tel" id="phone" required>
                 <button type="submit">Request a quote</button>
             </form>
-            <button class="btn-form">Connect with</button>
+            <a href="#callback-form" class="pop-up--btn"><button class="btn-form">Connect with</button></a>
             <div class="slider_wrap">
                 <div class="slider">
                     <div class="slide">
@@ -80,8 +86,10 @@
         </div>
     </section>
     <section id="service" class="service container">
-        <h2>Our Services</h2>
-        <h4>Lorem Ipsum is simply dummy Business industry.</h4>
+        <div class="section-head">
+            <h2>Our Services</h2>
+            <p>Lorem Ipsum is simply dummy Business industry.</p>
+        </div>
         <div class="blocks_container">
             <div class="block">
                 <i class="icon icon-clock"></i>
@@ -143,16 +151,20 @@
     <section id="about" class="about clearfix">
         <div class="left-part" style="background-image: url(img/half-img.jpg)"></div>
         <div class="right-part">
-            <h2>About us</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the ore recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-            <button>Read More</button>
+            <div class="section-head">
+                <h2>About us</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the ore recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                <button>Read More</button>
+            </div>
         </div>
     </section>
 
     <section id="pricing" class="pricing">
         <div class="container">
-            <h2>Choose your price</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing typesetting .</p>
+            <div class="section-head">
+                <h2>Choose your price</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing typesetting .</p>
+            </div>
             <div class="plans">
                 <div class="plan">
                     <h3>Basic plan</h3>
@@ -195,8 +207,10 @@
     </section>
 
     <section id="how_it_work" class="how_it_work container">
-        <h2>how it work</h2>
-        <p>Lorem Ipsum is simply dummy Business industry</p>
+        <div class="section-head">
+            <h2>how it work</h2>
+            <p>Lorem Ipsum is simply dummy Business industry</p>
+        </div>
         <div class="steps">
             <div class="step">
                 <i class="icon-headphones"></i>
@@ -231,13 +245,15 @@
                 </p>
             </div>
         </div>
-        <button>get started now</button>
+        <a href="#callback-form" class="pop-up--btn"><button>get started now</button></a>
     </section>
 
     <section id="happy_clients" class="happy_clients-wrapper">
         <div class="container happy_clients">
-            <h2>Happy Clients</h2>
-            <p>We are explain who is using our business solutions</p>
+            <div class="section-head">
+                <h2>Happy Clients</h2>
+                <p>We are explain who is using our business solutions</p>
+            </div>
             <div class="commentaries">
                 <div class="commentary">
                     <img src="img/photo-1.jpg" alt="img/photo-1.jpg isn`t found">
@@ -276,8 +292,10 @@
     </section>
 
     <section class="newsletter container">
-        <h2>Newsletter</h2>
-        <p>Lorem Ipsum is simply dummy Business industry</p>
+        <div class="section-head">
+            <h2>Newsletter</h2>
+            <p>Lorem Ipsum is simply dummy Business industry</p>
+        </div>
         <form id="subscribe">
             <label for="name-subscribe">
                 <i class="icon-user"></i>
@@ -294,7 +312,7 @@
     </section>
 
     <section id="contact_us" class="contact_us ">
-       <div class="container">
+        <div class="container">
             <div class="address">
                 <h4>address</h4>
                 <p>Business street</p>
@@ -307,39 +325,56 @@
         </div>
     </section>
 
+
+    <footer>
+        <div class="container">
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#pricing">Pricing table</a></li>
+                    <li><a href="#how_it_work">How it work</a></li>
+                    <li><a href="#happy_clients">Happy clients</a></li>
+                    <li><a href="#contact_us">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="phone"><i class="icon-phone"></i> +987 9976 999</div>
+            <div class="social">
+                <a href="https://twitter.com" title="twitter.com"><i class="icon-twitter"></i></a>
+                <a href="https://facebook.com" title="facebook.com"><i class="icon-facebook"></i></a>
+                <a href="https://plus.google.com" title="gplus.com"><i class="icon-gplus"></i></a>
+                <a href="https://linkedin.com" title="linkedin.com"><i class="icon-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p><span>All contents © copyright 2014</span> <span>Business Theme.</span> <span> All rights reserved </span> <span>Designed by : akhilwebfolio</span></p>
+            </div>
+        </div>
+    </footer>
     
-	<footer>
-		<div class="container">
-		<hr>
-			<nav>
-				<ul>
-					<li><a href="#home" class="active">Home</a></li>
-					<li><a href="#service">Service</a></li>
-					<li><a href="#about">About us</a></li>
-					<li><a href="#pricing">Pricing table</a></li>
-					<li><a href="#how_it_work">How it work</a></li>
-					<li><a href="#happy_clients">Happy clients</a></li>
-					<li><a href="#contact_us">Contact us</a></li>
-				</ul>
-			</nav>
-			<div class="phone"><i class="icon-phone"></i> +987 9976 999</div>
-			<div class="social">
-				<a href="https://twitter.com" title="twitter.com"><i class="icon-twitter"></i></a>
-				<a href="https://facebook.com" title="facebook.com"><i class="icon-facebook"></i></a>
-				<a href="https://plus.google.com" title="gplus.com"><i class="icon-gplus"></i></a>
-				<a href="https://linkedin.com" title="linkedin.com"><i class="icon-linkedin"></i></a>
-			</div>
-		</div>
-		<div class="copyright">
-			<div class="container">
-				<p><span>All contents © copyright 2014</span> <span>Business Theme.</span> <span> All rights reserved </span> <span>Designed by : akhilwebfolio</span></p>
-			</div>
-		</div>
-	</footer>
-   
+    <!-- Pop-up Form -->
+    <div class="hidden">
+        <form id="callback-form">
+           <h2>Request a quote</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat unde corporis voluptatem, quod voluptatibus minus nisi, reprehenderit quis velit</p>
+            <input type="text" placeholder="Full Name" name="name" id="name" required>
+            <input type="email" placeholder="Email Address" name="email" id="email">
+            <input type="tel" placeholder="Phone Number" name="tel" id="phone" required>
+            <button type="submit">Request a quote</button>
+        </form>
+    </div>
+
     <!--	scripts-->
     <script src="js/jquery.min.js"></script>
+
+    <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="libs/waypoints/waypoints.min.js"></script>
+    <script src="libs/animate/animate-css.js"></script>
     <script src="libs/slick/slick.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 
