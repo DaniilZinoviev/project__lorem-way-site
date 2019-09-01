@@ -1,25 +1,14 @@
 @font-face {
   font-family: 'icon-pack';
-  src: url('../fonts/icon-pack/icon-pack.eot?12958950');
-  src: url('../fonts/icon-pack/icon-pack.eot?12958950#iefix') format('embedded-opentype'),
-       url('../fonts/icon-pack/icon-pack.woff2?12958950') format('woff2'),
-       url('../fonts/icon-pack/icon-pack.woff?12958950') format('woff'),
-       url('../fonts/icon-pack/icon-pack.ttf?12958950') format('truetype'),
-       url('../fonts/icon-pack/icon-pack.svg?12958950#icon-pack') format('svg');
+  src: url('icon-pack.eot?12958950');
+  src: url('icon-pack.eot?12958950#iefix') format('embedded-opentype'),
+       url('icon-pack.woff2?12958950') format('woff2'),
+       url('icon-pack.woff?12958950') format('woff'),
+       url('icon-pack.ttf?12958950') format('truetype'),
+       url('icon-pack.svg?12958950#icon-pack') format('svg');
   font-weight: normal;
   font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'icon-pack';
-    src: url('../font/icon-pack.svg?12958950#icon-pack') format('svg');
-  }
-}
-*/
- 
+} 
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "icon-pack";
   font-style: normal;
